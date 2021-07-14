@@ -1,0 +1,3 @@
+bitcoin
+pysha3
+leveldb == 0.201

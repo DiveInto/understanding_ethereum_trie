@@ -1,6 +1,7 @@
 import logging
 import logging.config
-from sha3 import sha3_256
+#from sha3 import sha3_256
+from _pysha3 import keccak_256
 from bitcoin import privtopub
 import struct
 import os
@@ -28,7 +29,7 @@ def debug(label):
 
 
 def sha3(seed):
-    return sha3_256(seed).digest()
+    return keccak_256(seed).digest()
 
 
 def privtoaddr(x):

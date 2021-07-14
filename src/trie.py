@@ -651,7 +651,9 @@ class Trie(object):
             self.root_node,
             bin_to_nibbles(str(key)),
             value)
-        if PRINT: print 'root hash before db commit', self.get_root_hash().encode('hex')
+        #if PRINT: print 'root hash before db commit', self.get_root_hash().encode('hex')
+        self.get_root_hash().encode('hex')
+
         self.db.commit()
 
     def root_hash_valid(self):
