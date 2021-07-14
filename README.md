@@ -6,14 +6,15 @@ Hopefully, this will help those confused soles who have yet to grasp the trie.
 
 ## build docker image
 
+```
 docker build . -t understanding_ethereum_trie
+```
 
 ## run scripts
 
 ```
-docker run -d understanding_ethereum_trie --name eth-trie
-docker exec -it eth-trie /bi
-n/bash
+docker run --name eth-trie -d understanding_ethereum_trie 
+docker exec -it eth-trie /bin/bash
 
 > python exercises/ex1.py
 ...
